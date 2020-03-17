@@ -1,0 +1,42 @@
+a.skip{
+  background: white;
+  left: 0;
+  padding: 5px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top .5s ease-out;
+  transition: top .5s ease-out;
+  z-index: 1;
+}
+a.skip:focus{
+  top:20px;
+  color: black;
+  text-decoration-style: solid;
+}
+
+
+#content{
+	margin-left: 17%;
+	margin-right: 17%;
+	font-size: 18px;
+}
+
+@-webkit-keyframes logo_wiggle{
+  from {width: 25px;}
+  to {width:300px;}
+}
+
+@keyframes logo_wiggle{
+  from {width: 25px;}
+  to {width:300px;}
+}
+
+#content{
+	animation: logo_wiggle 2.5s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #content{
+    animation:none;
+  }
+}

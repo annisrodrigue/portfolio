@@ -1,0 +1,35 @@
+#links>a>img{
+	height: 80px;
+	width: auto;
+}
+
+#mission>img{
+	background-color: white;
+}
+
+#links{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+#parallax{
+	background-attachment: fixed; /* Parallax effect */     
+  	background-position: center;  /* Parallax effect */
+	background-repeat: no-repeat; /* Parallax effect */
+	background-size: cover;       /* Parallax effect */
+	color: white;
+	height: 600px;
+	background-image: url(../images/helmets.png);                /* Parallax effect */
+}
+
+@media screen and (min-width: 850px){
+	#links{
+		grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+@media screen and (min-width: 1050px){
+	#links{
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+}
